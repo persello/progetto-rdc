@@ -11,30 +11,17 @@
 % **************************************************
 % Information and Commands for Reuse
 % **************************************************
-\newcommand{\thesisTitle}{The Clean Thesis Style}
-\newcommand{\thesisName}{Ricardo Langner}
-\newcommand{\thesisSubject}{Documentation}
-\newcommand{\thesisDate}{June 21, 2016}
-\newcommand{\thesisVersion}{My First Draft}
+\newcommand{\thesisTitle}{Progettazione di una rete aziendale}
+\newcommand{\thesisName}{Riccardo Persello}
+\newcommand{\thesisSubject}{Reti di Calcolatori}
+\newcommand{\thesisDate}{\today}
+\newcommand{\thesisVersion}{0.1}
 
-\newcommand{\thesisFirstReviewer}{Jane Doe}
-\newcommand{\thesisFirstReviewerUniversity}{\protect{Clean Thesis Style University}}
-\newcommand{\thesisFirstReviewerDepartment}{Department of Clean Thesis Style}
+\newcommand{\thesisFirstSupervisor}{Pier Luca Montessoro}
 
-\newcommand{\thesisSecondReviewer}{John Doe}
-\newcommand{\thesisSecondReviewerUniversity}{\protect{Clean Thesis Style University}}
-\newcommand{\thesisSecondReviewerDepartment}{Department of Clean Thesis Style}
-
-\newcommand{\thesisFirstSupervisor}{Jane Doe}
-\newcommand{\thesisSecondSupervisor}{John Smith}
-
-\newcommand{\thesisUniversity}{\protect{Clean Thesis Style University}}
-\newcommand{\thesisUniversityDepartment}{Department of Clean Thesis Style}
-\newcommand{\thesisUniversityInstitute}{Institute for Clean Thesis Dev}
-\newcommand{\thesisUniversityGroup}{Clean Thesis Group (CTG)}
-\newcommand{\thesisUniversityCity}{City}
-\newcommand{\thesisUniversityStreetAddress}{Street address}
-\newcommand{\thesisUniversityPostalCode}{Postal Code}
+\newcommand{\thesisUniversity}{\protect{Università degli Studi di Udine}}
+\newcommand{\thesisUniversityDepartment}{Dipartimento di Ingegneria e Architettura}
+\newcommand{\thesisUniversityGroup}{Corso di Ingegneria Elettronica}
 
 
 % **************************************************
@@ -46,7 +33,7 @@
 % **************************************************
 % Load and Configure Packages
 % **************************************************
-\usepackage[english]{babel} % babel system, adjust the language of the content
+\usepackage[italian]{babel} % babel system, adjust the language of the content
 \PassOptionsToPackage{% setup clean thesis style
     figuresep=colon,%
     hangfigurecaption=false,%
@@ -59,7 +46,7 @@
     configurebiblatex=true,%
     bibsys=biber,%
     bibfile=bib-refs,%
-    bibstyle=alphabetic,%
+    bibstyle=numeric,%
     bibsorting=nty,%
 }{cleanthesis}
 \usepackage{cleanthesis}
@@ -75,3 +62,5 @@
     bookmarksnumbered=true,     %
     bookmarksopen=true          %
 }
+
+\bibliography{bib-refs}
