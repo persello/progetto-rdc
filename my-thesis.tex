@@ -51,19 +51,19 @@
 \pagenumbering{roman}			% roman page numbing (invisible for empty page style)
 \pagestyle{empty}				% no header or footers
 \input{content/titlepages}		% INCLUDE: all titlepages
-\cleardoublepage
+\cleardoublepage{}
 
 \pagestyle{plain}				% display just page numbers
 \input{content/abstract}		% INCLUDE: the abstracts (english and german)
-\cleardoublepage
+\cleardoublepage{}
 %
 \input{content/acknowledgement} % INCLUDE: acknowledgement
-\cleardoublepage
+\cleardoublepage{}
 %
 \currentpdfbookmark{\contentsname}{toc}
 \setcounter{tocdepth}{2}		% define depth of toc
 \tableofcontents				% display table of contents
-\cleardoublepage
+\cleardoublepage{}
 
 % --------------------------
 % Body matter
@@ -88,32 +88,33 @@
 % --------------------------
 %
 {%
-\setstretch{1.1}
-\renewcommand{\bibfont}{\normalfont\small}
-\setlength{\biblabelsep}{0pt}
-\setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
-\printbibliography[nottype=online]
-\newrefcontext[labelprefix={@}]
-\printbibliography[heading=subbibliography,title={Webpages},type=online]
+    \setstretch{1.1}
+    \renewcommand{\bibfont}{\normalfont\small}
+    \setlength{\biblabelsep}{0pt}
+    \setlength{\bibitemsep}{0.5\baselineskip plus 0.5\baselineskip}
+    \printbibliography[nottype=online]
+    \newrefcontext[labelprefix={@}]
+    \printbibliography[heading=subbibliography,title={Webpages},type=online]
 }
-\cleardoublepage
+
+\cleardoublepage{}
 
 \listoffigures
-\cleardoublepage
+\cleardoublepage{}
 
 \listoftables
-\cleardoublepage
+\cleardoublepage{}
 
-\lstlistoflistings
-\cleardoublepage
+\lstlistoflistings{}
+\cleardoublepage{}
 
-\appendix\cleardoublepage
+\appendix\cleardoublepage{}
 \input{content/chapter-appendix}       % INCLUDE: appendix
 
-\cleardoublepage
+\cleardoublepage{}
 \input{content/colophon}
 
-\cleardoublepage
+\cleardoublepage{}
 \input{content/declaration}
 \clearpage
 
