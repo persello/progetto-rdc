@@ -22,7 +22,7 @@
 % **************************************************
 % Setup YOUR thesis document in this file !
 % **************************************************
-\input{my-thesis-setup}
+\input{setup}
 
 
 % **************************************************
@@ -57,8 +57,8 @@
 \input{content/abstract}		% INCLUDE: the abstracts (english and german)
 \cleardoublepage{}
 %
-\input{content/acknowledgement} % INCLUDE: acknowledgement
-\cleardoublepage{}
+% \input{content/acknowledgement} % INCLUDE: acknowledgement
+% \cleardoublepage{}
 %
 \currentpdfbookmark{\contentsname}{toc}
 \setcounter{tocdepth}{2}		% define depth of toc
@@ -75,13 +75,13 @@
 %% Uncomment the following lines using the \part command
 %% to add part sections
 %\part{Example Part}
-\input{content/chapter-introduction}   % INCLUDE: introduction
-\input{content/chapter-related-work}   % INCLUDE: related work
+% \input{content/chapters/introduction}   % INCLUDE: introduction
+% \input{content/chapters/related-work}   % INCLUDE: related work
 
 %\part{Additional Example Part}
-\input{content/chapter-system}         % INCLUDE: system
-\input{content/chapter-concepts}       % INCLUDE: concepts
-\input{content/chapter-conclusion}     % INCLUDE: conclusion
+% \input{content/chapters/system}         % INCLUDE: system
+% \input{content/chapters/concepts}       % INCLUDE: concepts
+% \input{content/chapters/conclusion}     % INCLUDE: conclusion
 
 % --------------------------
 % Back matter
@@ -108,18 +108,18 @@
 \lstlistoflistings{}
 \cleardoublepage{}
 
-\appendix\cleardoublepage{}
-\input{content/chapter-appendix}       % INCLUDE: appendix
+% \appendix\cleardoublepage{}
+% \input{content/chapters/appendix}       % INCLUDE: appendix
 
 \cleardoublepage{}
 \input{content/colophon}
 
-\cleardoublepage{}
-\input{content/declaration}
-\clearpage
+% \cleardoublepage{}
+% \input{content/declaration}
+% \clearpage
 
-\newpage
-\mbox{}
+% \newpage
+% \mbox{}
 
 % **************************************************
 % End of Document CONTENT
